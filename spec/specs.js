@@ -55,5 +55,29 @@ describe('toDecimal', function() {
     expect(toDecimal(12212, 3)).to.equal(158);
   });
 
+  it("takes a 0 in hexadecimal and returns 0 in decimal", function() {
+    expect(toDecimal(0, 16)).to.equal(0);
+  });
+
+  it("takes a 9 in hexadecimal and returns 9 in decimal", function() {
+    expect(toDecimal(9, 16)).to.equal(9);
+  });
+
+  it("takes an A in hexadecimal and returns 10 in decimal", function() {
+    expect(toDecimal('A', 16)).to.equal(10);
+  });
+
+  it("takes a 10 in hexadecimal and returns 16 in decimal", function() {
+    expect(toDecimal(10, 16)).to.equal(16);
+  });
+
+  it("takes a 1D in hexadecimal and returns 29 in decimal", function() {
+    expect(toDecimal('1D', 16)).to.equal(29);
+  });
+
+  it("takes a C1 in hexadecimal and returns 193 in decimal", function() {
+    expect(toDecimal('C1', 16)).to.equal(193);
+  });
+
 
 });
