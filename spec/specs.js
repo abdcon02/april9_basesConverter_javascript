@@ -1,42 +1,30 @@
-describe('getScore', function() {
-  it('accepts an "a" for input and returns score of 1', function() {
-    expect(getScore('a')).to.equal(1);
+describe('toDecimal', function() {
+  it("takes a 0 in binary and returns 0 in decimal", function() {
+    expect(toDecimal(0)).to.equal(0);
   });
 
-  it('accepts a "d" for input and returns score of 2', function() {
-    expect(getScore('d')).to.equal(2);
+  it("takes a 1 in binary and returns 1 in decimal", function() {
+    expect(toDecimal(1)).to.equal(1);
   });
 
-  it('accepts a "ee" for input and returns score of 2', function() {
-    expect(getScore('ee')).to.equal(2);
+  it("takes a 10 in binary and returns 2 in decimal", function() {
+    expect(toDecimal(10)).to.equal(2);
   });
 
-  it('accepts a "cgi" for input and returns score of 6', function() {
-    expect(getScore("cgi")).to.equal(6);
+  it("takes a 11 in binary and returns 3 in decimal", function() {
+    expect(toDecimal(11)).to.equal(3);
   });
 
-  it('accepts a "strength" for input and returns a score of 12', function() {
-    expect(getScore("strength")).to.equal(12);
+  it("takes a 100 in binary and returns 4 in decimal", function() {
+    expect(toDecimal(100)).to.equal(4);
   });
 
-  it('accepts a "QI" for input and returns a score of 11', function() {
-  expect(getScore("QI")).to.equal(11);
+  it("takes a 10010 in binary and returns 18 in decimal", function() {
+    expect(toDecimal(10010)).to.equal(18);
   });
 
-  it('accepts a "Hello Tom" for input and returns a score 13', function() {
-    expect(getScore("Hello Tom")).to.equal(13);
-  });
-
-  it('accepts a "Toms Problem" for input and returns a score of 19', function() {
-    expect(getScore("Toms Problem")).to.equal(19);
-  });
-
-  it('accepts a "Tom\'s Problem" for input and returns a score of 19', function() {
-    expect(getScore("Tom\'s Problem")).to.equal(19);
-  });
-
-  it('accetps a " .." for input and returns a score of 0', function(){
-    expect(getScore(" ..")).to.equal(0);
+  it("takes a 111011 in binary and returns 59 in decimal", function() {
+    expect(toDecimal(111011)).to.equal(59);
   });
 
 });
