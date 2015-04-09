@@ -12,3 +12,19 @@ function toDecimal(input, base){
   });
   return output;
 }
+
+$(document).ready(function() {
+  $("#converter").submit(function(event) {
+
+    var number = $("#number").val();
+    var base = $("#base").val();
+
+    var result = toDecimal(number, base);
+
+    $("#base-output").text(base)
+    $("#number-output").text(result);
+    $("#return").show();
+
+    event.preventDefault();
+  });
+});

@@ -5,21 +5,27 @@
     <link rel="stylesheet" href="css/main.css">
     <script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
     <script src="js/scripts.js"></script>
-    <title>Scrabble</title>
+    <title>Base Converter</title>
   </head>
   <body>
     <div class="container">
-      <h1>Scrabble Score Generator</h1>
+      <h1>Base Number Generator</h1>
 
-      <form id="score">
-        <label for="word">Enter Your Word</label>
-        <input type="text" id="word">
+      <form id="converter">
+        <label for="number">Enter your number</label>
+        <input type="text" id="number">
 
-        <button type="submit">Get Your Score</button>
+        <select id="base">
+          <option value="2">Binary</option>
+          <option value="3">Trinary</option>
+          <option value="16">Hexadecimal</option>
+        </select>
+
+        <button type="submit">Convert</button>
       </form>
 
       <div id="return">
-        <p> Your Scrabble Word Score is: <span id="points"></span></p>
+        <p>Your number in base <span id="base-output"></span> is: <span id="number-output"></span></p>
       </div>
     </div>
   </body>
