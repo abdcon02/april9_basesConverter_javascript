@@ -12,7 +12,7 @@ This app will convert any number in base 2, 3, or hexadecimal (16) into a normal
 
 1. `git clone` the repository
 2. `cd` into the project directory
-3. Open the index.html file on your browser.
+3. Open the bases.html file on your browser.
 
 #### Technologies
 
