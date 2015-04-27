@@ -1,4 +1,4 @@
-# Bases Converter App with AngularJS for Epicodus
+# Bases Converter App with JavaScript for Epicodus
 
 ### Connor Abdelnoor & Tom Mertz
 
