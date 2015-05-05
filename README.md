@@ -16,7 +16,7 @@ This app will convert any number in base 2, 3, or hexadecimal (16) into a normal
 
 #### Technologies
 
-* AngularJS
+* JQuery
 * Bootstrap
 
 #### License [MIT](https://gist.github.com/abdcon02/0a856bcb7bf738ebc1ee)
